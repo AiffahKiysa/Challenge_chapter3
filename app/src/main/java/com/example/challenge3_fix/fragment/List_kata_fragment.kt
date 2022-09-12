@@ -141,7 +141,7 @@ class List_kata_Fragment : Fragment() {
         rvItems = view?.findViewById(R.id.rv_kata)!!
         rvItems.setHasFixedSize(true)
 
-        list.addAll(AbjadData.listAbjadJ)
+        list.addAll(AbjadData.listAbjadI)
 
         rvItems.layoutManager = LinearLayoutManager(context)
         val listAdapter = List_abjad_adapter(list)
