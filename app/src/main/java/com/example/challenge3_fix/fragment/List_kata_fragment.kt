@@ -34,118 +34,23 @@ class List_kata_Fragment : Fragment() {
 
         var abjad = arguments?.getString("click_abjad")
 
+        rvItems = view?.findViewById(R.id.rv_kata)!!
+        rvItems.setHasFixedSize(true)
+
         when(abjad){
-            "A" -> listA()
-            "B" -> listB()
-            "C" -> listC()
-            "D" -> listD()
-            "E" -> listE()
-            "F" -> listF()
-            "G" -> listG()
-            "H" -> listH()
-            "I" -> listI()
-            "J" -> listJ()
+            "A" -> {list.addAll(AbjadData.listAbjadA)}
+            "B" -> {list.addAll(AbjadData.listAbjadB)}
+            "C" -> {list.addAll(AbjadData.listAbjadC)}
+            "D" -> {list.addAll(AbjadData.listAbjadD)}
+            "E" -> {list.addAll(AbjadData.listAbjadE)}
+            "F" -> {list.addAll(AbjadData.listAbjadF)}
+            "G" -> {list.addAll(AbjadData.listAbjadG)}
+            "H" -> {list.addAll(AbjadData.listAbjadH)}
+            "I" -> {list.addAll(AbjadData.listAbjadI)}
+            "J" -> {list.addAll(AbjadData.listAbjadJ)}
         }
-    }
-    fun listA(){
-        rvItems = view?.findViewById(R.id.rv_kata)!!
-        rvItems.setHasFixedSize(true)
-
-        list.addAll(AbjadData.listAbjadA)
-
         rvItems.layoutManager = LinearLayoutManager(context)
         val listAdapter = List_abjad_adapter(list)
         rvItems.adapter = listAdapter
     }
-    fun listB(){
-        rvItems = view?.findViewById(R.id.rv_kata)!!
-        rvItems.setHasFixedSize(true)
-
-        list.addAll(AbjadData.listAbjadB)
-
-        rvItems.layoutManager = LinearLayoutManager(context)
-        val listAdapter = List_abjad_adapter(list)
-        rvItems.adapter = listAdapter
-    }
-    fun listC(){
-        rvItems = view?.findViewById(R.id.rv_kata)!!
-        rvItems.setHasFixedSize(true)
-
-        list.addAll(AbjadData.listAbjadC)
-
-        rvItems.layoutManager = LinearLayoutManager(context)
-        val listAdapter = List_abjad_adapter(list)
-        rvItems.adapter = listAdapter
-    }
-    fun listD(){
-        rvItems = view?.findViewById(R.id.rv_kata)!!
-        rvItems.setHasFixedSize(true)
-
-        list.addAll(AbjadData.listAbjadD)
-
-        rvItems.layoutManager = LinearLayoutManager(context)
-        val listAdapter = List_abjad_adapter(list)
-        rvItems.adapter = listAdapter
-    }
-    fun listE(){
-        rvItems = view?.findViewById(R.id.rv_kata)!!
-        rvItems.setHasFixedSize(true)
-
-        list.addAll(AbjadData.listAbjadE)
-
-        rvItems.layoutManager = LinearLayoutManager(context)
-        val listAdapter = List_abjad_adapter(list)
-        rvItems.adapter = listAdapter
-    }
-    fun listF(){
-        rvItems = view?.findViewById(R.id.rv_kata)!!
-        rvItems.setHasFixedSize(true)
-
-        list.addAll(AbjadData.listAbjadF)
-
-        rvItems.layoutManager = LinearLayoutManager(context)
-        val listAdapter = List_abjad_adapter(list)
-        rvItems.adapter = listAdapter
-    }
-    fun listG(){
-        rvItems = view?.findViewById(R.id.rv_kata)!!
-        rvItems.setHasFixedSize(true)
-
-        list.addAll(AbjadData.listAbjadG)
-
-        rvItems.layoutManager = LinearLayoutManager(context)
-        val listAdapter = List_abjad_adapter(list)
-        rvItems.adapter = listAdapter
-    }
-    fun listH(){
-        rvItems = view?.findViewById(R.id.rv_kata)!!
-        rvItems.setHasFixedSize(true)
-
-        list.addAll(AbjadData.listAbjadH)
-
-        rvItems.layoutManager = LinearLayoutManager(context)
-        val listAdapter = List_abjad_adapter(list)
-        rvItems.adapter = listAdapter
-    }
-    fun listI(){
-        rvItems = view?.findViewById(R.id.rv_kata)!!
-        rvItems.setHasFixedSize(true)
-
-        list.addAll(AbjadData.listAbjadI)
-
-        rvItems.layoutManager = LinearLayoutManager(context)
-        val listAdapter = List_abjad_adapter(list)
-        rvItems.adapter = listAdapter
-    }
-    fun listJ(){
-        rvItems = view?.findViewById(R.id.rv_kata)!!
-        rvItems.setHasFixedSize(true)
-
-        list.addAll(AbjadData.listAbjadI)
-
-        rvItems.layoutManager = LinearLayoutManager(context)
-        val listAdapter = List_abjad_adapter(list)
-        rvItems.adapter = listAdapter
-    }
-
 }

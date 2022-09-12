@@ -114,15 +114,15 @@ object AbjadData{
             }
             return list
         }
-//    private val listJ = arrayOf("jerapah", "jawaban", "jember")
-//    val listAbjadJ: ArrayList<Abjad>
-//        get(){
-//            val list = arrayListOf<Abjad>()
-//            for (position in listJ.indices) {
-//                val item = Abjad()
-//                item.huruf = listJ[position]
-//                list.add(item)
-//            }
-//            return list
-//        }
+    private val listJ = arrayOf("jerapah", "jawaban", "jember")
+    val listAbjadJ: ArrayList<Abjad>
+        get(){
+            val list = arrayListOf<Abjad>()
+            for (position in listJ.indices) {
+                val item = Abjad()
+                item.huruf = listJ[position]
+                list.add(item)
+            }
+            return list
+        }
 }
